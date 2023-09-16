@@ -1,6 +1,5 @@
 version: '3'
 services:
-
   movies:
     image: rohitpekale007/projectmovies:latest
     ports:
@@ -16,15 +15,15 @@ services:
       replicas: 3
 
   dth:
-    image: rohitpekale007/projectttrain:latest
-    port:
+    image: rohitpekale007/projectdth:latest
+    ports:
       - "83:80"
     deploy:
       replicas: 3
 
   recharge:
     image: rohitpekale007/projectrecharge:latest
-    port:
+    ports:
       - "84:80"
     deploy:
       replicas: 3
