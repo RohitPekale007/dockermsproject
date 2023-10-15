@@ -1,28 +1,28 @@
 version: '3'
 services:
   movies:
-    image: rohitpekale007/projectmovies:latest
+    image: rohitpekale07/projectmovies1:latest
     ports:
       - "81:80"
     deploy:
       replicas: 3
 
   train:
-    image: rohitpekale007/projecttrain:latest
+    image: rohitpekale07/projecttrain1:latest
     ports:
       - "82:80"
     deploy:
       replicas: 3
 
   dth:
-    image: rohitpekale007/projectdth:latest
+    image: rohitpekale07/projectdth1:latest
     ports:
       - "83:80"
     deploy:
       replicas: 3
 
   recharge:
-    image: rohitpekale007/projectrecharge:latest
+    image: rohitpekale07/projectrecharge1:latest
     ports:
       - "84:80"
     deploy:
